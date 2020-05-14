@@ -31,5 +31,8 @@ def input_to_index(input)
   index == input - 1
 end
 
-def move
+def move(board, index, token = "X")
+  board(index) = token
+end  
+  
     
