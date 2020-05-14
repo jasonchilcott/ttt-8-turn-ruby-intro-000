@@ -7,23 +7,29 @@ def display_board(board)
 end
 
 def position_taken?(board,index)
-  if 
+  if
     (board[index] == " " || board[index] == "" || board[index] == nil)
     return false
-  else  
+  else
     return true
-  end  
-end    
+  end
+end
 
 def valid_move?(board, index)
-  if 
+  if
     position_taken?(board, index)
     return false
-  elsif 
+  elsif
     board[index].between?(0, 8)
     return true
   else
     return false
   end
 end
-      
+
+def input_to_index(input)
+  index == input - 1
+end
+
+def move
+    
